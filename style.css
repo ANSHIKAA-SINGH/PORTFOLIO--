@@ -1,0 +1,156 @@
+*{
+ margin:0;
+ padding: 0; 
+ box-sizing: border-box;  
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+:root{
+    --primary-color:#fff;
+    --primary-shade:#f7f5f2;
+    --secondary-color:brown;
+    --secondary-shade:purple;
+    --red-color:#d40700;
+    --red-shade:#b20600;
+    --accent-color:white;
+}
+
+ul li{
+    list-style:none;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: rgb(79, 48, 8);
+    color:var(--primary-color);
+}
+.content{
+    height: 90vh;
+}
+.layout{
+    width: 80%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.nav-bar{
+    padding: 30px 0;
+}
+ul li a{
+    margin: 0 10px;
+    padding: 0 5px;
+    color: var(--accent-color);
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+ul li a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: 0.6s ease;
+}
+ul li a:hover::before{
+    width: 100%;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color:baby pink;
+    color: purple;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 500;
+    position: relative;
+    align-items: flex-start;
+}
+.btn:hover{
+    background-color: navy;
+    color: var(--primary-color);
+    border: 2px solid var(--red-color);
+}
+.btn{
+    width: 140px;
+}
+.flex2{
+    flex: 2;
+}
+.flex3{
+    flex:3;
+}
+.my-t-10{
+    margin-top: 10px;
+
+}
+.my-t-20{
+    margin-top: 20px;
+}
+.right img{
+    width: 80%;
+}
+.right img{
+    border-radius: 20%;
+}
+@media only screen and (max-width:600px){
+    header{ 
+        background-color: #b20600;
+}
+.header-text{
+    margin-top: 100%;
+    font-size: 16px;
+}
+.header-text h2{
+    font-size: 30px;
+}
+}
+.contact-left{
+    flex-basis:35%;
+}
+.contact-right{
+    flex-basis:60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 50%;
+    border: 0;
+    outline: none;
+    background: rgb(192, 192, 109);
+    padding: 15px;
+    margin: 15px 0;
+    color: baby pink;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
